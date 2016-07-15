@@ -1,0 +1,8 @@
+- title: Test Image
+  slide_type: Image
+  slide_source: /assets/images/slider/slide1.jpg
+  weight: 1
+- title: Test Video
+  slide_type: Video
+  slide_source: https://vimeo.com/channels/staffpicks/174312494
+  weight: 2

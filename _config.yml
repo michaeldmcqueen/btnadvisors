@@ -25,16 +25,13 @@ permalink: /blog/:year-:month-:day/:title/
 
 #Collections
 collections:
-  conversations:
-    output: true
-    permalink: /conversations/:title/
+  
 #Defaults
-defaults:
-  -
-    scope:
-      type: "conversations"
-    values:
-      layout: "conversations"
+
+slide-types:
+  - Image
+  - Video
+
 # Blog Settings
 paginate: 3
 paginate_path: "/blog/page:num/"
