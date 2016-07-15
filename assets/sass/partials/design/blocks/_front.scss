@@ -1,0 +1,23 @@
+.page-content {
+  background: $white;
+}
+.content-wrapper {
+  header {
+    border-top: 3px solid $color-one;
+    border-right: 1px solid $color-one;
+    border-bottom: 1px solid $color-one;
+    border-left: 1px solid $color-one;
+    background: #f6f6f6;
+    padding: 1.5em 2em;
+    h1 {
+      margin: 0 0 .5em;
+    }
+  }
+  article {
+    padding: 2em;
+    a {
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+}
