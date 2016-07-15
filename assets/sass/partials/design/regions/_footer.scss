@@ -1,0 +1,78 @@
+.footer-wrapper {
+  @include clearfix;
+  background-color: #313131;
+  width: 100%;
+  @include breakpoint($tablet, $no-query: '.no-mq') {
+  }
+}
+footer.wrap {
+  //padding: 1.5em 2em 1em;
+  font-size: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  .left {
+    a {
+      display: inline-block;
+      margin-right: .5em;
+      margin-bottom: 1em;
+    }
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      @include grid-span(6, 1, $gutter: 0);
+    }
+  }
+  .right {
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      @include grid-span(6, 7, $gutter: 0);
+        text-align: right;
+    }
+  }
+  .footer-top {
+    background-color: #000;
+    overflow: hidden;
+    color: #fff; 
+  }
+
+  .footer-bottom {
+    //overflow: hidden;
+    
+    //height: 130px;
+    color: #fff;
+    p {
+      margin: 0;
+      font-size: 90%;
+      }
+    .left { 
+        padding: 2em;
+        text-align: center;
+
+      }
+    .right { 
+      padding: 2em;
+      text-align: center;
+    }
+    /* Tablet: Footer Bottom */
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      .left {
+        text-align: left;
+      }
+      .right {
+        text-align: right;
+      }
+    }
+  }
+  .donate-btn {
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      border: 2px solid #fff;
+      display: inline-block;
+      padding: .25em 1em;
+      border-radius: 3px;
+      transition: all linear .25s;
+      &:hover {
+        background-color: $color-two;
+      }
+    }
+  }
+}

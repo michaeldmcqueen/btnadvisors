@@ -1,0 +1,45 @@
+// Full page layout
+.grid {
+  @include clearfix;
+  margin: 1em auto;
+  padding: 0;
+  list-style: none;
+  h2 {
+    text-align: left;
+    margin: 0;
+  }
+  .gallery-group {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+  }
+  .grid-item {
+    float: left;
+    padding: 10px;
+    list-style: none;
+    @include breakpoint($tablet, $no-query: '.no-mq') { width: 20%; }
+    .gallery-item {
+      max-width: 100%;
+      line-height: 0;
+      padding: 0px;
+      margin: 0px;
+      @include border-radius(3px);
+    }
+    .gallery-group-name {
+      bottom: 0;
+      width: 100%;
+      margin: 0;
+      padding: .5em 0px;
+      overflow: hidden;
+      color: white;
+    }
+  }
+  .grid-sizer, .grid-item {
+    @include breakpoint($tablet, $no-query: '.no-mq') { width: 33.333%; }
+  }
+  .grid-item { float: left; }
+}
+.gallery-fn .grid-item img {
+  display: block;
+  width: 100%;
+}

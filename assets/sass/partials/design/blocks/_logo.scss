@@ -1,0 +1,12 @@
+.logo {
+  width: calc(100% - 80px);
+  padding: 2em 1em;
+  @include breakpoint($tablet, $no-query:'.no-mq') {
+      padding: 3em 0;
+      width: 100%;
+    }
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,42 @@
+a {
+  color: $link;
+  &:hover {
+    color: $hover;
+  }
+  &:visited {
+    color: $visited;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  a {
+    text-decoration: none;
+  }
+}
+div.btn {
+  display: inline-block;
+  padding-bottom: 1em;
+  padding-right: 1em;
+  a {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    @include btn($color-one, #fff, darken($color-one, 0%), 2px, 14px);
+    font-family: $heading-font-family;
+    @include trans(all, linear, .2s);
+    padding: .45em 1.75em .4em;
+    box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.34);
+    border-radius: 100px;
+    &:hover {
+      background: lighten($color-one, 15%);
+    }
+  }
+}
+
+
+div.btn.large {
+  display: inline-block;
+  padding-bottom: 1em;
+  padding-right: 1em;
+  font-size: 120%;
+}

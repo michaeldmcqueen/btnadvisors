@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<main>
+  <div class="preface">
+    <div class="flexslider" id="slider"> 
+       <ul class="slides">
+         {% for item in site.conversations %}
+          {% if item.show_on_slider == true %}
+            <li data-thumb="">
+                <div class="videoWrapper">
+                   <iframe src="{{ item.video_trailer }}" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+              </li>
+            {% endif %}
+          {% endfor %}
+      </ul>
+    </div>
+    <div class="preface-text">
+      <h2>Videos That Matter</h2>
+      <a class="editable conversation-link" href="/conversations">Learn more about our Videos That Matter Campaign</a>
+    </div>
+  </div>
+    <section class="content-wrapper wrap">
+      <div class="team-conversation">
+        <div class="col col-1 conversation editable"><div class="block-wrapper"><h3>Conversations</h3><p>CoreConversations is the catalyst for difficult conversations about critical issues that impact our individual well-being but are of community concern.</p><p>Although we have choices in life, we seldom recognize that a choice exists as we reflexively live through conditioned responses.&nbsp; Through our Videos That Matter Campaign, we are working to activate change - to educate, encourage, and engage individuals on important choices.</p><div class="btn"><a href="/conversations">Learn More</a></div></div></div>
+        <div class="col col-2 team editable"><div class="block-wrapper"><h3>Teams</h3><p>CoreTeams equips individuals to lead conversations and be change agents. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p><p>Most leadership work is done on an individual level.&nbsp; We have taken the approach that individual leadership is enhanced in the context of the team.&nbsp; That is why our conferences bring individuals together as a team to focus on specific objectives. &nbsp;</p><div class="btn"><a href="/team">Learn More</a></div></div></div>
+      </div>
+      <div class="participate-call editable"><a href="http://coreteamexperience.com/" target="_blank">JOIN US AT OUR UPCOMING EVENTS <img src="/assets/images/arrow-light.png" alt="" /></a></div> 
+      <div class="about-us-front">
+        <div class="editable"><h4>About Us</h4><p>We believe to be healthy is to be growing and thriving! Our mission is to equip the development of healthy communities through two main efforts - CoreConversations and CoreTeams.</p><div class="btn"><a href="/about">Learn More</a></div></div>
+      </div>
+    </section>
+</main>

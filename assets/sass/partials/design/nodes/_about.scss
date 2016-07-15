@@ -1,0 +1,16 @@
+.about  {
+  .col-wrap {
+    @include clearfix;
+    padding-bottom: 2em;
+  }
+  .col-1 {
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      @include grid-span(5.5,1);
+    }
+  }
+  .col-2 {
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      @include grid-span(5.5,7.5);
+    }
+  }
+}
