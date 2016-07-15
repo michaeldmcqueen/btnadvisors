@@ -1,5 +1,6 @@
 'use strict';
 
+require('es6-promise').polyfill();
 var gulp            = require('gulp'),
     browserSync     = require('browser-sync'),
     sass            = require('gulp-sass'),

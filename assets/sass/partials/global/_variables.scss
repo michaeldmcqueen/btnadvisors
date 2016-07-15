@@ -6,10 +6,9 @@ $rem: 16px;
 
 // Colors
 // Sites Main Colors
-$color-one: #2C4859; // D Blue
-$color-two: #F5A623; // Yellow/Gold
-$color-three: #EFEFEB; // Light gray for body background
-$color-four: #FDCC0F; // Yellow
+$color-one: #e52f36; // red
+$color-two: #363839; // gray
+$color-three: #282a2b; // darker gray
 
 // Regions - Use Site Main Colors variables for these if they fit
 $nav-bg: #fff;
@@ -59,5 +58,3 @@ $no-query: 959px, 'no-query' '.no-mq';
 $breakpoint-no-query-fallbacks: true;
 $breakpoint-to-ems: true;
 $breakpoints: '';
-
-

@@ -1,9 +1,9 @@
 # Site settings
-title: CoreVeritas
-email: admin@coreveritas.org
-description: 
-baseurl: "http://coreveritas.org" # the subpath of your site, e.g. /blog/
-url: "http://coreveritas.org" # the base hostname & protocol for your site
+title: BTN Advisors
+email: info@btnadvisors.com
+description:
+baseurl: "http://btnadvisors.com" # the subpath of your site, e.g. /blog/
+url: "http://btnadvisors.com" # the base hostname & protocol for your site
 timezone: America/Denver
 
 # Site Author(s)
@@ -44,14 +44,14 @@ reading_time:     true
 words_per_minute: 200
 
 # Disqus Comments
-disqus_short_name: 
-disqus_show_comment_count: 
+disqus_short_name:
+disqus_show_comment_count:
 
 # typekit
 typekit: "kao0apj"
 
 # Social Media
-facebook: 
+facebook:
 
 # Google Analytics
 google_analytics_tracking_id: "UA-77908478-2"
