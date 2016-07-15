@@ -6,11 +6,16 @@ layout: default
   <div class="preface">
     <div class="flexslider" id="slider">
       <ul class="slides">
-        {% for item in site.conversations %}
-          {% if item.show_on_slider == true %}
+        {% assign items = site.data.slides | sort: 'weight' %}
+        {% for item in items %}
+          {% if item.slide_type == "Image" %}
+            <li data-thumb="">
+              <img src="{{ item.slide_source }}" alt="{{ item.title }}">
+            </li>
+          {% elsif item.slide_type == "Video" %}
             <li data-thumb="">
               <div class="videoWrapper">
-                <iframe src="{{ item.video_trailer }}" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <iframe id="player" src="{{ item.slide_source }}" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
               </div>
             </li>
           {% endif %}
@@ -24,8 +29,8 @@ layout: default
       <div>We are here to help you find your stride, your success, and achieve your bold ideas.</div>
     </header>
     <article>
-      <div>Strategic advisor to organizations with bold ideas and audacious goals. We believe that how we get there is as important as where we are going. We believe that alignment plus engagement can catapult a company towards its purpose. We are accepting clients on a limited basis.</div>
-      <div>If you are interested in working with us, please send an email to <a href="mailto:info@btnadvisors.com">info@btnadvisors.com</a>. We would love to speak with you.</div>
+      <p>Strategic advisor to organizations with bold ideas and audacious goals. We believe that how we get there is as important as where we are going. We believe that alignment plus engagement can catapult a company towards its purpose. We are accepting clients on a limited basis.</p>
+      <p>If you are interested in working with us, please send an email to <a href="mailto:info@btnadvisors.com">info@btnadvisors.com</a>. We would love to speak with you.</p>
     </article>
   </section>
 </main>
