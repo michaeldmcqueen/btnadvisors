@@ -1,0 +1,48 @@
+.contact-form {
+  background: #eee;
+  h2 {
+    margin-top: 0;
+    font-family: $sans;
+  }
+  form {
+    width: 420px;
+    margin: 0 auto;
+    input[type="text"], input[type="email"], select, textarea {
+      background: #fff;
+      width: 100%;
+      border: 0;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 0 #fff;
+      transition: box-shadow .3s ease-in-out;
+      font-family: $serif;
+      &:focus {
+        box-shadow: 0 0 20px #fff;
+      }
+    }
+    input[type="text"], input[type="email"], select {
+      height: 38px;
+    }
+    select {
+      color: #a3a5b5;
+      padding-left: 1rem;
+      font-size: 1rem;
+    }
+    textarea {
+      resize: none;
+      height: 150px;
+    }
+    input[type="submit"] {
+      background: $color-one;
+      width: 225px;
+      box-shadow: none;
+      text-shadow: none;
+      font-weight: normal;
+      cursor: pointer;
+      font-family: $serif;
+      transition: background .3s ease-in-out;
+      &:hover {
+        background: darken($color-one, 5%);
+      }
+    }
+  }
+}

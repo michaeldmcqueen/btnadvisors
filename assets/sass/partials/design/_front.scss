@@ -1,0 +1,60 @@
+.content-wrapper {
+  header {
+    border-bottom: 1px solid #b1b1b1;
+    padding: 3rem 0 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 550px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    h1 {
+      margin: 0 0 10px;
+      font-family: $sans;
+    }
+    p {
+      font-size: 1.2rem;
+      margin: 0 0 10px;
+      font-family: $serif;
+    }
+    &:before, &:after {
+      content: '';
+      width: 120px;
+      height: 5px;
+      position: absolute;
+      z-index: 2;
+      bottom: -3px;
+      background: #fff;
+    }
+    &:before {
+      left: 0;
+    }
+    &:after {
+      right: 0;
+    }
+  }
+  article {
+    padding: 2em 10rem;
+    font-family: $serif;
+    @include clearfix;
+    .content-left {
+      @include breakpoint($tablet, $no-query:'.no-mq') {
+        @include grid-span(6, 1);
+      }
+    }
+    .content-right {
+      figure {
+        margin: 0;
+      }
+      img {
+        width: 100%;
+      }
+      .attributed {
+        font-weight: bold;
+      }
+      @include breakpoint($tablet, $no-query:'.no-mq') {
+        @include grid-span(6, 7);
+      }
+    }
+  }
+}

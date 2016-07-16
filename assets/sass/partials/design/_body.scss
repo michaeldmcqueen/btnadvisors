@@ -4,13 +4,19 @@ html {
 	body {
     margin: 0;
 	  height: 100%;
-    background: #fff url('/assets/images/bg.jpg') no-repeat top center;
+    background: #fff;
 		background-size: cover;
     overflow-x: hidden;
 	}
 }
 
+a {
+	text-decoration: none;
+}
 *, *:before, *:after { box-sizing: inherit; }
+*:focus {
+	outline: none;
+}
 .wrap {
   @include clearfix;
 }
