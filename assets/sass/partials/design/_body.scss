@@ -19,9 +19,6 @@ a {
 }
 .wrap {
   @include clearfix;
-}
-.site-wrapper {
-  margin: 0 1em;
   max-width: $container_width;
   @include breakpoint($tablet, $no-query: ".no-mq") {
     margin: 0 auto;

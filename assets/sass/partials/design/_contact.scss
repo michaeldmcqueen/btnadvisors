@@ -5,7 +5,8 @@
     font-family: $sans;
   }
   form {
-    width: 420px;
+    width: 100%;
+    max-width: 420px;
     margin: 0 auto;
     input[type="text"], input[type="email"], select, textarea {
       background: #fff;

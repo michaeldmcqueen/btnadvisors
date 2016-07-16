@@ -1,4 +1,16 @@
 .preface {
   background: #eee;
-  padding: 0 5rem;
+  padding: 0 1rem;
+  .slides {
+    background: #eee;
+  }
+  .flex-control-nav {
+    display: none;
+  }
+  @include breakpoint($tablet, $no-query:'.no-mq') {
+    padding: 0 5rem;
+  }
+  @include breakpoint($desktop, $no-query:'.no-mq') {
+    padding: 0 15rem;
+  }
 }

@@ -1,7 +1,7 @@
 .site-header {
   @include clearfix;
   background: #fff;
-  padding: 1em 5rem;
+  padding: 1em;
   margin: 0 auto;
   position: relative;
   z-index: 1;
@@ -24,5 +24,8 @@
     @include breakpoint($tablet, $no-query:'.no-mq') {
       @include grid-span(3, 10);
     }
+  }
+  @include breakpoint($tablet, $no-query:'.no-mq') {
+    padding: 1em 5rem;
   }
 }
