@@ -1,25 +1,25 @@
 .content-wrapper {
   header {
     border-bottom: 1px solid #b1b1b1;
-    padding: 3rem 0 2rem;
-    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    margin: 0 auto 1rem;
     text-align: center;
-    width: 550px;
-    margin: 0 auto;
+    width: 90%;
     position: relative;
     z-index: 1;
     h1 {
       margin: 0 0 10px;
+      font-size: 1.5em;
       font-family: $sans;
     }
     p {
-      font-size: 1.2rem;
+      font-size: 1rem;
       margin: 0 0 10px;
       font-family: $serif;
     }
     &:before, &:after {
       content: '';
-      width: 120px;
+      width: 50px;
       height: 5px;
       position: absolute;
       z-index: 2;
@@ -32,10 +32,25 @@
     &:after {
       right: 0;
     }
+    @include breakpoint($tablet, $no-query:'.no-mq') {
+      padding: 3rem 0 2rem;
+      margin: 0 auto 2rem;
+      width: 550px;
+      h1 {
+        font-size: 2.3em;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+      &:before, &:after {
+        width: 120px;
+      }
+    }
   }
   article {
-    padding: 2em 10rem;
+    padding: 1rem 2rem;
     font-family: $serif;
+    font-size: .9rem;
     @include clearfix;
     .content-left {
       @include breakpoint($tablet, $no-query:'.no-mq') {
@@ -55,6 +70,10 @@
       @include breakpoint($tablet, $no-query:'.no-mq') {
         @include grid-span(6, 7);
       }
+    }
+    @include breakpoint($tablet, $no-query:'.no-mq') {
+      font-size: 1rem;
+      padding: 2em 10rem;
     }
   }
 }

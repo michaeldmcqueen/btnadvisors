@@ -9,7 +9,7 @@ $(document).ready(function() {
     $('.menu').toggleClass('show');
   });
   // Vimeo API nonsense
-  var player = document.getElementById('player_1');
+  var player = document.getElementById('player');
   $f(player).addEvent('ready', ready);
 
   function addEvent(element, eventName, callback) {
