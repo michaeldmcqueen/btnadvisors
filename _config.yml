@@ -25,7 +25,7 @@ permalink: /blog/:year-:month-:day/:title/
 
 #Collections
 collections:
-  
+
 #Defaults
 
 slide-types:
@@ -39,13 +39,6 @@ paginate_path: "/blog/page:num/"
 # Reading Time Feature
 reading_time:     true
 words_per_minute: 200
-
-# Disqus Comments
-disqus_short_name:
-disqus_show_comment_count:
-
-# typekit
-typekit: "kao0apj"
 
 # Social Media
 facebook:
